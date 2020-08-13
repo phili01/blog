@@ -1,0 +1,133 @@
+.site-main {
+    position: relative;
+    font-family: "Roboto",Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 6px 0;
+    padding: 0;
+
+    &__blog {
+        position: relative;
+        @mixin clearfix;
+        background-color: #fff;
+        padding: 20px;
+        width: 100%;
+
+        &--cnt {
+            float: none;
+            width: 100%;
+            height: 150px;
+            @mixin clearfix;
+            overflow: hidden;
+
+            @mixin atSmall {
+                float: left;
+                width: 50%;
+                padding-right: 20px;
+            }
+
+            @mixin atMedium {
+                width: 33.333%;
+            }
+
+            &__img {
+                float: left;
+                width: 40%;
+                height: 150px;
+
+                & > img {
+                    display: block;
+                    width: 100%;
+                    height: 150px;
+                    overflow: hidden;
+                }
+            }
+
+            &__det {
+                position: relative;
+                width: 60%; 
+                height: 150px;
+                padding-left: 20px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+
+
+                &--title {
+                    color: #333;
+                    font-size: 1rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    padding: 0;
+                    margin: 0 0 5px 0;
+                }
+                
+                &--cnt {
+                    width: 100%;
+                    font-size: .875rem;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1.2;
+                    color: #333;
+                    font-weight: 400;
+                    overflow: hidden;
+                    height: 100px;
+                    display: flex;
+                    flex-grow: 1;
+                    text-overflow: ellipsis;
+                }
+
+                &--info {
+                    list-style: none;
+                    padding: 0;
+                    margin: 5px  0 0 0;
+                    font-size: .75rem;
+                    @mixin clearfix;
+
+                    & > li {
+                        float: left;
+
+                        &:first-child {
+                            margin-right: 5px;
+                        }
+
+                        & > svg {
+                            margin-right: 5px;
+                            color: $mainLightRed
+                        }
+                    }
+                }
+            
+            }
+        }
+        &--paginate {
+            list-style: none;
+            margin: 20px 0 0 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            @mixin clearfix;
+    
+            &__item {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: $mainDarkGray;
+                color: $mainLightRed;
+                float: left;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            &--active {
+                background-color: $mainLightRed;
+                color: #fff;
+            }
+        }
+    }
+}

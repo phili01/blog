@@ -1,0 +1,30 @@
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    @mixin clearfix;
+
+    @mixin atSmall {
+        padding-left: 18px;
+        padding-right: 18px;
+        max-width: 1236px;
+    }
+
+    &__exmain {
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1200px; 
+        margin: 0 auto;
+        @mixin clearfix;
+        
+
+        @mixin atLarge {
+            padding-left: 18px;
+            padding-right: 18px; 
+            max-width: 1236px; 
+        }
+    }
+}

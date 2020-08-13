@@ -1,0 +1,15 @@
+.icon {
+    position: relative;
+    &__site-header--facebook {
+        color: $mainLightBlue
+    }
+    &__site-header--twitter {
+        color: $mainLightRed
+    }
+    &__site-header--inst {
+        color: brown
+    }
+    &__site-header--git {
+        color: $mainLightRed
+    }
+}

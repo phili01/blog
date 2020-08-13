@@ -1,0 +1,12 @@
+.site-footer {
+    position: relative;
+    background-color: $mainDarkBlack;
+    text-align: center;
+
+    &__author {
+        padding: 5px;
+        color: #fff;
+        font-size: .875rem;
+        margin: 0;
+    }
+}
