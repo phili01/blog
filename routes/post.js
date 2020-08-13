@@ -1,14 +1,14 @@
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
-const {category, posts, connectStatus} = require('../serverDB/serverDB');
+const {posts, connectStatus} = require('../serverDB/serverDB');
 
 router.get('/',  (req,res, next) => {
-    res.render('post')
+    res.render('blog')
 })
 
 router.get('/:id',  (req, res,next) => {
-    res.render('post');
+    res.render('blog');
 })
 
 router.post('/',  (req, res, next) => {

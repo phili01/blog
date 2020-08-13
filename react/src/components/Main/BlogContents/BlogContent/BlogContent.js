@@ -10,7 +10,7 @@ const blogContent = props => {
         <div className="site-main__blog">
         <div className="site-main__blog--cnt">
             <div className="site-main__blog--cnt__img">
-                <img src={`http://localhost:3002/image/${props.cnt.image[0].id}`} alt="pics"/>
+                <img src={`https://bloggeronly.herokuapp.com/${props.cnt.image[0].id}`} alt="pics"/>
             </div>
             <div className="site-main__blog--cnt__det">
                 <h4 className="site-main__blog--cnt__det--title">{props.cnt.title}</h4>

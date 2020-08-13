@@ -45,8 +45,7 @@ let formRoutes = require('./routes/form');
 let categoryRoutes = require('./routes/category');
 let mediaRoute = require('./routes/media');
 
-app.use('/', [formRoutes, categoryRoutes, mediaRoute]);
-app.use('/blog', blogRoutes)
+app.use('/', [blogRoutes, formRoutes, categoryRoutes, mediaRoute]);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     return res.redirect('/');
